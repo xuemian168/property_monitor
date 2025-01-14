@@ -1,27 +1,34 @@
 # property_monitor
-An enterprise digital asset monitoring platform
-
-# Backend
+This is an enterprise-grade monitoring system designed for real-time network and digital asset management. Built using a Django backend with a Vue frontend, the platform ensures efficient monitoring, management, and notification functionalities for IT environments.
 
 Backend is a Django-based network monitoring system with the following key features and configurations:
 
 ## Core Features
-- TCP/IP monitoring with configurable timeout (5s), max latency (0.5s) and retry attempts (3)
-- HTTP endpoint monitoring with 5s timeout
-- Email testing functionality
-- JWT authentication for API security
-- PostgreSQL database backend
-- Scheduled tasks using django-crontab:
-  - TCP tests run every minute
-  - Email account tests run daily at midnight
 
-## Technical Stack
-- Django 4.2
-- Django REST Framework
-- PostgreSQL Database
-- Simple JWT for authentication
-- django-crontab for scheduled tasks
-- CORS enabled for cross-origin requests
+The application includes the following main modules:
+
+1. **Endpoint Monitoring** - Endpoint overview and monitoring
+2. **Network Management** - Network latency analysis and property management
+3. **Authentication Management** - Certificate management functionality
+4. **Mail System** - Email notification management
+5. **System Settings** - Security configuration and system settings
+
+# Technical Stack
+
+## Backend
+- Framework: Django 4.2 with Django REST Framework.
+- Database: PostgreSQL.
+- Authentication: Simple JWT.
+- Task Scheduling: django-crontab for scheduled jobs.
+- Cross-Origin Requests: CORS enabled for seamless integrations.
+
+## Frontend
+- Framework: Vue 3 with Composition API.
+- UI Components: Element Plus.
+- Other Dependencies:
+  - @fortawesome/fontawesome: Icon library.
+  - date-fns: Utility for date manipulation.
+  - ajv: JSON schema validation.
 
 ## Apps
 - cert: Certificate management
@@ -30,3 +37,27 @@ Backend is a Django-based network monitoring system with the following key featu
 - emailTest: Email testing
 - setting: System settings
 - end_point: Endpoint monitoring
+
+### Login Page
+![image](https://github.com/xuemian168/property_monitor/blob/main/img/login.jpg)
+
+### Dashboard
+![image](https://github.com/xuemian168/property_monitor/blob/main/img/monitor.jpg)
+
+### Property
+![image](https://github.com/xuemian168/property_monitor/blob/main/img/properties.jpg)
+
+### Certifications
+![image](https://github.com/xuemian168/property_monitor/blob/main/img/certs.jpg)
+
+### Certification Detail
+![image](https://github.com/xuemian168/property_monitor/blob/main/img/cert.jpg)
+
+### End Points
+![image](https://github.com/xuemian168/property_monitor/blob/main/img/end1.jpg)
+
+### Settings
+![image](https://github.com/xuemian168/property_monitor/blob/main/img/settings.jpg)
+
+### Mail System Monitor
+![image](https://github.com/xuemian168/property_monitor/blob/main/img/mails.jpg)
